@@ -1,12 +1,7 @@
-package ru.kuzmin.rest;
+package ru.kuzmin.rest.dto;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
 import jakarta.validation.constraints.NotBlank;
-import lombok.Getter;
-import lombok.Setter;
-import org.hibernate.annotations.Cascade;
+import ru.kuzmin.rest.entity.Department;
 
 public record EmployeeDto(
         @NotBlank(message = "Не должен быть пустым")

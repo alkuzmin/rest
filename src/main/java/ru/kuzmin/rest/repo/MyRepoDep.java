@@ -1,18 +1,13 @@
-package ru.kuzmin.rest;
+package ru.kuzmin.rest.repo;
 
-import jakarta.persistence.*;
 import jakarta.transaction.Transactional;
-import lombok.Getter;
-import lombok.Setter;
-import org.hibernate.annotations.processing.SQL;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
+import ru.kuzmin.rest.entity.Department;
 
-import java.util.List;
-
-interface MyRepoDep extends JpaRepository<Department, Integer> {
+public interface MyRepoDep extends JpaRepository<Department, Integer> {
     //List<Department> findAllByName(String name);
 
     @Modifying

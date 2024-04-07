@@ -1,4 +1,4 @@
-package ru.kuzmin.rest;
+package ru.kuzmin.rest.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.Cascade;
+import ru.kuzmin.rest.entity.Department;
 
 @Entity
 @Table(name = "Employees")

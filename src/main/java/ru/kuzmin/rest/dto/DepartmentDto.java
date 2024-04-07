@@ -1,4 +1,4 @@
-package ru.kuzmin.rest;
+package ru.kuzmin.rest.dto;
 
 import jakarta.persistence.Column;
 import jakarta.validation.constraints.NotBlank;

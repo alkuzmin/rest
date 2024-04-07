@@ -1,4 +1,4 @@
-package ru.kuzmin.rest;
+package ru.kuzmin.rest.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

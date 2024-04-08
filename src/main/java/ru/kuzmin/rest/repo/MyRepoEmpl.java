@@ -6,5 +6,5 @@ import ru.kuzmin.rest.entity.Employee;
 import java.util.Optional;
 
 public interface MyRepoEmpl extends JpaRepository<Employee, Integer> {
-    Optional<Employee> findByNumber(String number);
+    Optional<Employee> findById(Integer id);
 }

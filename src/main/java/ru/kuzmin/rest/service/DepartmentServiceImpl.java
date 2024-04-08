@@ -8,13 +8,14 @@ import ru.kuzmin.rest.entity.Department;
 import ru.kuzmin.rest.entity.Employee;
 import ru.kuzmin.rest.repo.MyRepoDep;
 import ru.kuzmin.rest.repo.MyRepoEmpl;
-
+import org.springframework.beans.factory.annotation.Autowired;
 import java.util.Optional;
 
 @RequiredArgsConstructor
 @Service
 @Validated
 public class DepartmentServiceImpl implements DepartmentService {
+    @Autowired
     private final MyRepoDep myRepoDep;
 
     @Override

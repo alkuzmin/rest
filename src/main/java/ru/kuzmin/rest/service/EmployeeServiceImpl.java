@@ -1,6 +1,7 @@
 package ru.kuzmin.rest.service;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 import ru.kuzmin.rest.repo.MyRepoDep;
@@ -14,6 +15,7 @@ import java.util.Optional;
 @Service
 @Validated
 public class EmployeeServiceImpl implements EmployeeService {
+    @Autowired
     private final MyRepoEmpl myRepoEmpl;
 
 
